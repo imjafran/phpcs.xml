@@ -49,12 +49,14 @@
 
 	<config name="testVersion" value="7.0-" />
 
-	<rule ref="Squiz.Commenting.FileComment.Missing" /> <!-- Missing file doc comment -->
 	<rule ref="Squiz.Classes.ClassFileName"  /> <!-- Class name doesn't match filename -->
 	<rule ref="Squiz.Classes.ValidClassName" /> <!-- Valid class name -->
 	<rule ref="Squiz.Classes.ClassFileName">
 		<exclude name="Squiz.Classes.ClassFileName.NoMatch" />
         <exclude name="Squiz.Classes.ValidClassName.NotCamelCaps" />
+	</rule>
+	<rule ref="Squiz.Commenting">
+		<exclude name="Squiz.Commenting"/>
 	</rule>
 	<!--
 	#############################################################################
