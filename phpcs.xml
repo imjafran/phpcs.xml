@@ -67,6 +67,7 @@
 	<rule ref="Generic.WhiteSpace" /> <!-- spacing and indentation -->
 	<rule ref="Generic.WhiteSpace.DisallowTabIndent"> <!-- Allow tab indent  -->
 		<exclude name="Generic.WhiteSpace.DisallowTabIndent.TabsUsed" />
+		<exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed" />
 	</rule>
 	<!-- <rule ref="Universal.Arrays.DisallowLongArraySyntax">  -->
 	<rule ref="Universal"> 
@@ -77,6 +78,7 @@
         <exclude name="Universal.ControlStructures.DisallowAlternativeSyntax.FoundIfWithInlineHTML" />
         <exclude name="Universal.Namespaces.EnforceCurlyBraceSyntax.Forbidden" />
         <exclude name="Universal.Files.SeparateFunctionsFromOO.Mixed" />
+        <exclude name="Universal.UseStatements.DisallowUseClass.FoundWithoutAlias" />
 	</rule>
 	<rule ref="Generic.Functions.FunctionCallArgumentSpacing"> <!-- whitespace in function arguements  -->
 		<exclude
